@@ -1,0 +1,567 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		20FA7E9A23F5ED2400957839 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20FA7E9923F5ED2400957839 /* AppDelegate.swift */; };
+		20FA7E9C23F5ED2400957839 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20FA7E9B23F5ED2400957839 /* SceneDelegate.swift */; };
+		20FA7EA123F5ED2400957839 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 20FA7E9F23F5ED2400957839 /* Main.storyboard */; };
+		20FA7EA323F5ED2800957839 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 20FA7EA223F5ED2800957839 /* Assets.xcassets */; };
+		20FA7EA623F5ED2800957839 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 20FA7EA423F5ED2800957839 /* LaunchScreen.storyboard */; };
+		20FA7EB123F5ED2800957839 /* SpinDanceCodeChallengeTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20FA7EB023F5ED2800957839 /* SpinDanceCodeChallengeTests.swift */; };
+		70E11BFD23F999C0003158C3 /* SensorViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70E11BF723F999C0003158C3 /* SensorViewController.swift */; };
+		70E11BFE23F999C0003158C3 /* SensorReader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70E11BF923F999C0003158C3 /* SensorReader.swift */; };
+		70E11BFF23F999C0003158C3 /* SensorReading.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70E11BFA23F999C0003158C3 /* SensorReading.swift */; };
+		70E11C0023F999C0003158C3 /* SensorViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70E11BFC23F999C0003158C3 /* SensorViewModel.swift */; };
+		70E11C0223F99CB6003158C3 /* SensorViewModelReading.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70E11C0123F99CB6003158C3 /* SensorViewModelReading.swift */; };
+		70E11C0423F99D00003158C3 /* SensorReport.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70E11C0323F99D00003158C3 /* SensorReport.swift */; };
+		9A41459823FC301E00827316 /* RxSwift.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 20FA7EC223F5F45600957839 /* RxSwift.framework */; };
+		9A41459A23FC61D100827316 /* RxCocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9A41459923FC61D100827316 /* RxCocoa.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		20FA7EAD23F5ED2800957839 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 20FA7E8E23F5ED2400957839 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 20FA7E9523F5ED2400957839;
+			remoteInfo = SpinDanceCodeChallenge;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		20FA7E9623F5ED2400957839 /* SpinDanceCodeChallenge.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SpinDanceCodeChallenge.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		20FA7E9923F5ED2400957839 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		20FA7E9B23F5ED2400957839 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		20FA7EA023F5ED2400957839 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		20FA7EA223F5ED2800957839 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		20FA7EA523F5ED2800957839 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		20FA7EA723F5ED2800957839 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		20FA7EAC23F5ED2800957839 /* SpinDanceCodeChallengeTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SpinDanceCodeChallengeTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		20FA7EB023F5ED2800957839 /* SpinDanceCodeChallengeTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpinDanceCodeChallengeTests.swift; sourceTree = "<group>"; };
+		20FA7EB223F5ED2800957839 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		20FA7EC223F5F45600957839 /* RxSwift.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = RxSwift.framework; path = Carthage/Build/iOS/RxSwift.framework; sourceTree = "<group>"; };
+		70E11BF723F999C0003158C3 /* SensorViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SensorViewController.swift; sourceTree = "<group>"; };
+		70E11BF923F999C0003158C3 /* SensorReader.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SensorReader.swift; sourceTree = "<group>"; };
+		70E11BFA23F999C0003158C3 /* SensorReading.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SensorReading.swift; sourceTree = "<group>"; };
+		70E11BFC23F999C0003158C3 /* SensorViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SensorViewModel.swift; sourceTree = "<group>"; };
+		70E11C0123F99CB6003158C3 /* SensorViewModelReading.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SensorViewModelReading.swift; sourceTree = "<group>"; };
+		70E11C0323F99D00003158C3 /* SensorReport.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SensorReport.swift; sourceTree = "<group>"; };
+		9A41459923FC61D100827316 /* RxCocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = RxCocoa.framework; path = Carthage/Build/iOS/RxCocoa.framework; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		20FA7E9323F5ED2400957839 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9A41459A23FC61D100827316 /* RxCocoa.framework in Frameworks */,
+				9A41459823FC301E00827316 /* RxSwift.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		20FA7EA923F5ED2800957839 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		20FA7E8D23F5ED2400957839 = {
+			isa = PBXGroup;
+			children = (
+				20FA7E9823F5ED2400957839 /* SpinDanceCodeChallenge */,
+				20FA7EAF23F5ED2800957839 /* SpinDanceCodeChallengeTests */,
+				20FA7E9723F5ED2400957839 /* Products */,
+				20FA7EC123F5F45600957839 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		20FA7E9723F5ED2400957839 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				20FA7E9623F5ED2400957839 /* SpinDanceCodeChallenge.app */,
+				20FA7EAC23F5ED2800957839 /* SpinDanceCodeChallengeTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		20FA7E9823F5ED2400957839 /* SpinDanceCodeChallenge */ = {
+			isa = PBXGroup;
+			children = (
+				70E11BF823F999C0003158C3 /* Models */,
+				70E11BF623F999C0003158C3 /* ViewControllers */,
+				70E11BFB23F999C0003158C3 /* ViewModels */,
+				20FA7E9923F5ED2400957839 /* AppDelegate.swift */,
+				20FA7E9B23F5ED2400957839 /* SceneDelegate.swift */,
+				20FA7E9F23F5ED2400957839 /* Main.storyboard */,
+				20FA7EA223F5ED2800957839 /* Assets.xcassets */,
+				20FA7EA423F5ED2800957839 /* LaunchScreen.storyboard */,
+				20FA7EA723F5ED2800957839 /* Info.plist */,
+			);
+			path = SpinDanceCodeChallenge;
+			sourceTree = "<group>";
+		};
+		20FA7EAF23F5ED2800957839 /* SpinDanceCodeChallengeTests */ = {
+			isa = PBXGroup;
+			children = (
+				20FA7EB023F5ED2800957839 /* SpinDanceCodeChallengeTests.swift */,
+				20FA7EB223F5ED2800957839 /* Info.plist */,
+			);
+			path = SpinDanceCodeChallengeTests;
+			sourceTree = "<group>";
+		};
+		20FA7EC123F5F45600957839 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				9A41459923FC61D100827316 /* RxCocoa.framework */,
+				20FA7EC223F5F45600957839 /* RxSwift.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		70E11BF623F999C0003158C3 /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				70E11BF723F999C0003158C3 /* SensorViewController.swift */,
+			);
+			path = ViewControllers;
+			sourceTree = "<group>";
+		};
+		70E11BF823F999C0003158C3 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				70E11BF923F999C0003158C3 /* SensorReader.swift */,
+				70E11BFA23F999C0003158C3 /* SensorReading.swift */,
+				70E11C0123F99CB6003158C3 /* SensorViewModelReading.swift */,
+				70E11C0323F99D00003158C3 /* SensorReport.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		70E11BFB23F999C0003158C3 /* ViewModels */ = {
+			isa = PBXGroup;
+			children = (
+				70E11BFC23F999C0003158C3 /* SensorViewModel.swift */,
+			);
+			path = ViewModels;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		20FA7E9523F5ED2400957839 /* SpinDanceCodeChallenge */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 20FA7EB523F5ED2800957839 /* Build configuration list for PBXNativeTarget "SpinDanceCodeChallenge" */;
+			buildPhases = (
+				20FA7E9223F5ED2400957839 /* Sources */,
+				20FA7E9323F5ED2400957839 /* Frameworks */,
+				20FA7E9423F5ED2400957839 /* Resources */,
+				20FA7EC023F5F3D700957839 /* ShellScript */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = SpinDanceCodeChallenge;
+			productName = SpinDanceCodeChallenge;
+			productReference = 20FA7E9623F5ED2400957839 /* SpinDanceCodeChallenge.app */;
+			productType = "com.apple.product-type.application";
+		};
+		20FA7EAB23F5ED2800957839 /* SpinDanceCodeChallengeTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 20FA7EB823F5ED2800957839 /* Build configuration list for PBXNativeTarget "SpinDanceCodeChallengeTests" */;
+			buildPhases = (
+				20FA7EA823F5ED2800957839 /* Sources */,
+				20FA7EA923F5ED2800957839 /* Frameworks */,
+				20FA7EAA23F5ED2800957839 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				20FA7EAE23F5ED2800957839 /* PBXTargetDependency */,
+			);
+			name = SpinDanceCodeChallengeTests;
+			productName = SpinDanceCodeChallengeTests;
+			productReference = 20FA7EAC23F5ED2800957839 /* SpinDanceCodeChallengeTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		20FA7E8E23F5ED2400957839 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1130;
+				LastUpgradeCheck = 1130;
+				ORGANIZATIONNAME = SpinDance;
+				TargetAttributes = {
+					20FA7E9523F5ED2400957839 = {
+						CreatedOnToolsVersion = 11.3.1;
+					};
+					20FA7EAB23F5ED2800957839 = {
+						CreatedOnToolsVersion = 11.3.1;
+						TestTargetID = 20FA7E9523F5ED2400957839;
+					};
+				};
+			};
+			buildConfigurationList = 20FA7E9123F5ED2400957839 /* Build configuration list for PBXProject "SpinDanceCodeChallenge" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 20FA7E8D23F5ED2400957839;
+			productRefGroup = 20FA7E9723F5ED2400957839 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				20FA7E9523F5ED2400957839 /* SpinDanceCodeChallenge */,
+				20FA7EAB23F5ED2800957839 /* SpinDanceCodeChallengeTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		20FA7E9423F5ED2400957839 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				20FA7EA623F5ED2800957839 /* LaunchScreen.storyboard in Resources */,
+				20FA7EA323F5ED2800957839 /* Assets.xcassets in Resources */,
+				20FA7EA123F5ED2400957839 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		20FA7EAA23F5ED2800957839 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		20FA7EC023F5F3D700957839 /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"$(SRCROOT)/Carthage/Build/iOS/RxSwift.framework",
+				"$(SRCROOT)/Carthage/build/iOS/RxCocoa.framework",
+				"$(SRCROOT)/Carthage/build/iOS/RxRelay.framework",
+			);
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(BUILT_PRODUCTS_DIR)/$(FRAMEWORKS_FOLDER_PATH)/RxSwift.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "/usr/local/bin/carthage copy-frameworks\n";
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		20FA7E9223F5ED2400957839 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				20FA7E9A23F5ED2400957839 /* AppDelegate.swift in Sources */,
+				70E11BFF23F999C0003158C3 /* SensorReading.swift in Sources */,
+				70E11C0223F99CB6003158C3 /* SensorViewModelReading.swift in Sources */,
+				70E11C0423F99D00003158C3 /* SensorReport.swift in Sources */,
+				70E11BFD23F999C0003158C3 /* SensorViewController.swift in Sources */,
+				70E11C0023F999C0003158C3 /* SensorViewModel.swift in Sources */,
+				20FA7E9C23F5ED2400957839 /* SceneDelegate.swift in Sources */,
+				70E11BFE23F999C0003158C3 /* SensorReader.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		20FA7EA823F5ED2800957839 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				20FA7EB123F5ED2800957839 /* SpinDanceCodeChallengeTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		20FA7EAE23F5ED2800957839 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 20FA7E9523F5ED2400957839 /* SpinDanceCodeChallenge */;
+			targetProxy = 20FA7EAD23F5ED2800957839 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		20FA7E9F23F5ED2400957839 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				20FA7EA023F5ED2400957839 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		20FA7EA423F5ED2800957839 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				20FA7EA523F5ED2800957839 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		20FA7EB323F5ED2800957839 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		20FA7EB423F5ED2800957839 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		20FA7EB623F5ED2800957839 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = TFCGQJ6652;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
+				);
+				INFOPLIST_FILE = SpinDanceCodeChallenge/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.spindance.SpinDanceCodeChallenge;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		20FA7EB723F5ED2800957839 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = TFCGQJ6652;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
+				);
+				INFOPLIST_FILE = SpinDanceCodeChallenge/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.spindance.SpinDanceCodeChallenge;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		20FA7EB923F5ED2800957839 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = TFCGQJ6652;
+				INFOPLIST_FILE = SpinDanceCodeChallengeTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.spindance.SpinDanceCodeChallengeTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/SpinDanceCodeChallenge.app/SpinDanceCodeChallenge";
+			};
+			name = Debug;
+		};
+		20FA7EBA23F5ED2800957839 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = TFCGQJ6652;
+				INFOPLIST_FILE = SpinDanceCodeChallengeTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.spindance.SpinDanceCodeChallengeTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/SpinDanceCodeChallenge.app/SpinDanceCodeChallenge";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		20FA7E9123F5ED2400957839 /* Build configuration list for PBXProject "SpinDanceCodeChallenge" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				20FA7EB323F5ED2800957839 /* Debug */,
+				20FA7EB423F5ED2800957839 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		20FA7EB523F5ED2800957839 /* Build configuration list for PBXNativeTarget "SpinDanceCodeChallenge" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				20FA7EB623F5ED2800957839 /* Debug */,
+				20FA7EB723F5ED2800957839 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		20FA7EB823F5ED2800957839 /* Build configuration list for PBXNativeTarget "SpinDanceCodeChallengeTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				20FA7EB923F5ED2800957839 /* Debug */,
+				20FA7EBA23F5ED2800957839 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 20FA7E8E23F5ED2400957839 /* Project object */;
+}
